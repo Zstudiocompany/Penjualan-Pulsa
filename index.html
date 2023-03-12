@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SIGMA TOP UP</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>SUGMA (BETA)</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="payment.html">Payment</a></li>
+		</ul>
+	</nav>
+	<main>
+		<section>
+			<h2>Payment Details</h2>
+			<form id="payment-form" action="payment.php" method="post">
+				<label for="name">Nama :</label>
+				<input type="text" id="name" name="name" required>
+				<label for="card-number">No Telpon:</label>
+				<input type="number" placeholder="Masukkan nomor" name="card-number" pattern="[0-9]*" />
+				<label for="cvv">CVV:</label>
+				<input type="text" id="cvv" name="cvv" required>
+				<label for="exp-date">Tanggal Pembayaran:</label>
+				<input type="date" id="exp-date" name="exp-date" placeholder="MM / YY" required>
+			</form>
+		</section>
+	</main>
+
+	<main>
+		<section>
+			<h2>Choose a Product</h2>
+			<div class="products">
+				<button class="P_tombol" id="button01">Three</button>
+				<button class="P_tombol" id="button02">XL</button>
+				<button class="P_tombol" id="button03">Indosat</button>
+				<button class="P_tombol" id="button04">Telkomsel</button>
+				<button class="P_tombol" id="button05">Smartfren</button>
+			</div>
+		</section>
+	</main>
+
+	<main>
+		<section>
+			<div id="myButton" class="style_content">
+				<div class="Wrapper">
+				  <button class="Tombol" id="button2"> <p class="Text_Mybutton"> Rp. 10.000 </p> <p class="Text_Mybills">Rp. 12.000</p> </button>
+				  <button class="Tombol" id="button3"> <p class="Text_Mybutton"> Rp. 15.000 </p> <p class="Text_Mybills">Rp. 17.000</p> </button>
+				  <button class="Tombol" id="button4"> <p class="Text_Mybutton"> Rp. 20.000 </p> <p class="Text_Mybills">Rp. 22.000</p> </button>
+				  <button class="Tombol" id="button5"> <p class="Text_Mybutton"> Rp. 25.000 </p> <p class="Text_Mybills">Rp. 27.000</p> </button>
+				</div>
+			  </div>
+		</section>
+	</main>
+	<script src="script.js"></script>
+</body>
+</html>
+
+
